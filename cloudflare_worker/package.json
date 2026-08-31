@@ -1,0 +1,15 @@
+{
+  "name": "milaidhoo-kakao-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 migrations apply milaidhoo-monitor --local",
+    "db:remote": "wrangler d1 migrations apply milaidhoo-monitor --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

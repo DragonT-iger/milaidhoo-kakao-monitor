@@ -1,0 +1,32 @@
+{
+  "intent": {
+    "id": "test-intent",
+    "name": "객실 날짜 조회"
+  },
+  "userRequest": {
+    "timezone": "Asia/Seoul",
+    "params": {},
+    "block": {
+      "id": "test-block",
+      "name": "객실 날짜 조회"
+    },
+    "utterance": "객실 조회 2027-03-17",
+    "lang": "ko",
+    "user": {
+      "id": "local-test-user",
+      "type": "botUserKey",
+      "properties": {}
+    }
+  },
+  "bot": {
+    "id": "test-bot",
+    "name": "밀라이두 알림 봇"
+  },
+  "action": {
+    "id": "test-action",
+    "name": "객실 날짜 조회",
+    "params": {},
+    "detailParams": {},
+    "clientExtra": {}
+  }
+}

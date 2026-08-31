@@ -1,0 +1,67 @@
+{
+  "hotel": {
+    "display_name": "Milaidhoo Maldives, an SLH Hotel",
+    "hotel_code": "mlemilx",
+    "hotel_slug": "milaidhoo-maldives",
+    "room_name": "Water Pool Villa",
+    "adults": 2,
+    "children": 0,
+    "currency": "USD"
+  },
+  "poll_interval_seconds": 600,
+  "jitter_seconds": 0,
+  "max_error_backoff_seconds": 600,
+  "hilton_block_backoff": {
+    "initial_seconds": 3600,
+    "maximum_seconds": 14400,
+    "multiplier": 2
+  },
+  "browser": {
+    "connection_mode": "cdp",
+    "channel": "msedge",
+    "headless": false,
+    "profile_directory": ".edge_monitor_profile",
+    "start_minimized": false,
+    "timeout_seconds": 35,
+    "max_consecutive_date_errors": 10
+  },
+  "notification": {
+    "chat_window_title": "밀라이두 알림 봇🤖",
+    "title_match": "exact",
+    "input_offset_y": 90,
+    "repeat_available_seconds": 120,
+    "command_draft_poll_seconds": 10,
+    "command_force_send_after_seconds": 60,
+    "command_auto_send": true,
+    "draft_only": true,
+    "dry_run": false
+  },
+  "statistics": {
+    "storage_mode": "changes_only",
+    "database_path": "hilton_monitor_stats.sqlite3",
+    "reports_directory": "reports",
+    "daily_report_enabled": false,
+    "daily_report_time": "00:05"
+  },
+  "report_monitoring": {
+    "batch_size": 1,
+    "interval_seconds": 3600,
+    "card_timeout_seconds": 20000,
+    "request_delay_seconds": 30,
+    "months": [
+      "2027-03"
+    ]
+  },
+  "remote_agent": {
+    "enabled": true,
+    "base_url": "https://milaidhoo-kakao-bot.yongbeom.workers.dev",
+    "agent_id": "",
+    "api_key_env": "AGENT_API_KEY",
+    "timeout_seconds": 15
+  },
+  "api": {
+    "stale_after_seconds": 1800,
+    "host": "127.0.0.1",
+    "port": 8000
+  }
+}
